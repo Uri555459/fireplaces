@@ -1,0 +1,49 @@
+.footer
+    padding-top: 15px
+    padding-bottom: 50px
+    background: $black
+    color: $white
+    a
+        font-family: $exo2
+        font-weight: 300
+        font-size: 20px
+        line-height: 24px
+        color: $white
+    &__columns
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+    &__item
+        &:nth-child(1)
+            width: 185px
+        &:nth-child(2)
+            width: 176px
+        &:nth-child(3)
+            width: 145px
+
+    &__address,
+    &__social,
+    &_phone,
+    &_email
+        font-size: 32px
+        line-height: 38px
+        font-weight: 400
+    &__address,
+    &__social,
+    &_phone
+        margin-top: 20px    
+    &_email
+        margin-top: 30px
+        line-height: 24px
+    &__social_link
+        display: inline-block
+        overflow: hidden
+        width: 56px
+        height: 56px
+        border-radius: 50%
+        transition: background .3s linear
+        margin-right: 10px
+        margin-top: 30px
+        &:hover
+            background: $accent
