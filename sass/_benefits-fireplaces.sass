@@ -1,0 +1,97 @@
+.benefits-fireplaces
+    padding-top: 30px
+    .container
+        width: 100%
+        max-width: 1410px
+        min-width: 320px
+        overflow-x: hidden
+
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__img
+        width: 100%
+        max-width: 725px
+        position: relative
+        padding-right: 230px
+        .section__title
+            display: block
+            text-align: center
+        img
+            margin-bottom: 30px
+
+    &__text
+        max-width: 630px
+        padding-left: 20px
+
+    &__title
+        font-size: 22px
+        font-weight: 500
+
+    &__img_desc
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        display: block
+    &__img_framing,
+    &__img_electric-center
+        display: block
+        position: absolute
+        font-size: 25px
+        line-height: 30px
+        border-bottom: 3px solid $accent
+        text-align: end
+        &::after
+            content: ""
+            position: absolute
+            display: block
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background: $accent
+            overflow: hidden
+            left: -5px
+            bottom: -5px
+
+    &__img_framing
+        top: 80px
+        right: 0
+        width: 100%
+        max-width: 335px
+
+    &__img_electric-center
+        right: 0
+        top: 245px
+        width: 100%
+        max-width: 390px
+
+    @media screen and ( max-width: 1300px )
+        &__inner
+            flex-direction: column
+
+        &__img
+            margin: 0 auto 30px
+
+        &__text
+            padding-left: 0
+
+    @media screen and ( max-width: 600px )
+        &__img
+            padding-right: 150px
+
+        &__img_framing
+            top: 90px
+            max-width: 290px
+
+        &__img_electric-center
+            top: 206px
+            max-width: 324px
+
+    @media screen and ( max-width: 450px )
+        &__img_framing
+            top: 68px
+            max-width: 220px
+
+        &__img_electric-center
+            top: 130px
+            max-width: 240px

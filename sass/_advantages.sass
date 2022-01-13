@@ -1,0 +1,36 @@
+.advantages
+    padding-top: 35px
+    text-align: center
+
+    &__list
+        margin-top: 35px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+
+    &__item
+        flex-basis: 25%
+        margin-bottom: 57px
+
+    &__img
+        width: 164.92px
+        height: 164.92px
+        border: 3.5px solid #D93B3B
+        border-radius: 50%
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        img
+            width: 112px
+            height: 109px
+
+    &__text
+        max-width: 189.91px
+        margin: 10px auto 0
+
+@media screen and ( max-width: 768px )
+    .advantages
+        &__item
+            flex-basis: 33.333%

@@ -1,0 +1,32 @@
+.about
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        margin-top: 42px
+        align-items: center
+    &__img
+        width: 100%
+        max-width: 597px
+        margin-right: 25px
+
+    &__text
+        max-width: 733px
+        .section__title
+            margin-left: 12px
+
+    &__subtitle
+        font-size: 20px
+        line-height: 23px
+
+    @media screen and ( max-width: 1000px )
+        &__inner
+            flex-direction: column-reverse
+
+        &__img
+            max-width: 730px
+            margin-top: 15px
+            margin-right: 0
+
+        &__text .section__title
+            margin-left: 0
